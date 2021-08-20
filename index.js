@@ -4,11 +4,14 @@ class Student{
         this.lastName = lastName;
         this.year = year;
     }
+    // creating a instance method to use
+    fullName(){
+        return `Your full name is ${this.firstName} ${this.lastName} and you are in year ${this.year}`;
+    }
 
 }
 
-let s1 = new Student("Sean", "Jaculina", "sophomore");
+let Sean = new Student("Sean", "Jaculina", 4);
 
-console.log(s1);
+console.log(Sean.fullName());
 
-console.log(new Student("Emil", "Katz", "JR"));
