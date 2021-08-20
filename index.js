@@ -11,4 +11,4 @@ let s1 = new Student("Sean", "Jaculina", "sophomore");
 
 console.log(s1);
 
-console.log(new Student("Emil", "Katz", "JR"));
+console.log(new Student("Emil", "Katz", "JR"));adfsafad
