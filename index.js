@@ -29,7 +29,16 @@ class Student{
         return sum/this.scores.length;
 
     }
+
+    /* static keyword defines a static method for a class.
+    Static methods are called without instantiating their class & cannot be called through a class instance.
+    Static methods are often used to create utility functions for an application.
+    */
+    static enrollStudents(...students){
+        console.log(...students);
+    }
 }
+
 
 let Sean = new Student("Sean", "Jaculina", 4);
 let student2 = new Student("Student", "2", 4);
@@ -38,3 +47,5 @@ let student2 = new Student("Student", "2", 4);
 Sean.addScore(91);
 Sean.addScore(82);
 console.log(Sean.calculateAvg());
+
+Student.enrollStudents(Sean, student2);
